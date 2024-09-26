@@ -44,6 +44,6 @@ export default defineConfig(({ command }) => {
         sort: 'mobile-first',
       }),
     ],
-    base: '/goit-advancedjs-hw-01'
+    base: '/goit-advancedjs-hw-01/dist'
   };
 });
