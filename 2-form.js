@@ -1,0 +1,2 @@
+import"./assets/styles-Ced9b9v3.js";const a={email:"",message:""},t=document.querySelector(".feedback-form"),m="feedback-form-state";if(localStorage.getItem(m)){const e=JSON.parse(localStorage.getItem(m));a.email=e.email,a.message=e.message,t.elements.email.value=e.email,t.elements.message.value=e.message}t.addEventListener("input",e=>{let s=e.target.name;a[s]=t.elements[s].value,localStorage.setItem(m,JSON.stringify(a))});t.addEventListener("submit",e=>{e.preventDefault(),localStorage.removeItem(m),t.reset()});
+//# sourceMappingURL=2-form.js.map
