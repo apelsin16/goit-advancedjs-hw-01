@@ -26,6 +26,12 @@ form.addEventListener("input", (evt) => {
 
 form.addEventListener("submit", (evt) => {
     evt.preventDefault();
+    if(!formData.email && !formData.message) {
+        console.log('Both fields are requered');
+        return;
+    }
+    console.log(formData);
+    
     localStorage.removeItem(localStorageKey);
     form.reset();
 });
